@@ -1,0 +1,15 @@
+﻿@using WebMatrix.Data;
+@{
+   var db = Database.Open("WebPagesMovies"); 
+   var selectedData = db.Query("SELECT * FROM Movies");
+   var grid = new WebGrid(source: selectedData);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
